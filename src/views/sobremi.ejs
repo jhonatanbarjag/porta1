@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <%- include('partials/head') %>
+</head>
+<body>
+
+    <%- include('partials/navigation') %>
+    
+    <style>
+        #sobre-mi {
+    background-color: #f0f0f0;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 50px auto; /* Centrar la sección horizontalmente */
+    text-align: center; /* Centrar el texto */
+}
+
+#sobre-mi h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+#sobre-mi p {
+    color: #555;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+    </style>
+
+    <section id="sobre-mi">
+        <h2>Sobre Mí</h2>
+        <p>Soy un desarrollador web apasionado por crear soluciones innovadoras.</p>
+    </section>
+    
+</body>
+</html>

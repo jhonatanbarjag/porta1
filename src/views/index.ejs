@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <%- include('partials/head') %>
+    
+</head>
+    <%- include('partials/navigation') %>  
+<body>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            background: white;
+        }
+
+        .hero-content {
+            max-width: 50%;
+        }
+
+        .hero h2 {
+            color: #333;
+            font-size: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: #000;
+        }
+
+        .highlight {
+            color: #ff8c00;
+        }
+
+        .red-text {
+            color: red;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #4a00e0;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 20px;
+            margin-top: 15px;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            margin-right: 10px;
+            color: black;
+            font-size: 1.5rem;
+        }
+
+        .hero-image img {
+            width: 300px;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-content, .hero-image {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Hola,</h2>
+            <h1>Soy<span class="highlight">Jhonatan</span></h1>
+            <p>Soy un  <span class="red-text">A pasionado programador Backend</span></p>
+            <a href="/about" class="btn">SOBRE MI →</a>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/jhonatan-barja-8259b6339" target="_blank" rel="noopener noreferrer">
+                    <i class='bx bxl-linkedin-square'></i>
+                </a>
+                <a href="https://github.com/jhonatanbarjag"><i class='bx bxl-github' ></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-code"></i></a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="/img/foto.jpeg" alt="Image">
+        </div>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+.navbar {
+    background-color: #4CAF50 !important; /* Color de fondo verde */
+    padding: 15px;
+    transition: background-color 0.3s ease-in-out; /* Transición suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-nav .nav-link {
+    color: black !important;
+    font-size: 1.1rem;
+    margin-right: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: red !important; /* Color dorado al pasar el cursor o al enfocar */
+    outline: none; /* Eliminar el borde de enfoque predeterminado */
+}
+
+.navbar-nav .nav-link.active {
+    color: #FFD700 !important; /* Color dorado para el enlace activo */
+    font-weight: bold; /* Resaltar el enlace activo */
+}
+
+.navbar-nav .nav-link.disabled {
+    color: rgba(255, 255, 255, 0.5) !important;
+    cursor: not-allowed;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        display: block;
+        padding: 10px 0;
+    }
+}
